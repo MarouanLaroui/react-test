@@ -8,7 +8,7 @@ const props = {
 function App() {
   return (
     <div className="App">
-      <TaskList taks={props.tasks} name={props.name}/>
+      <TaskList tasks={props.tasks} name={props.name}/>
     </div>
   );
 }

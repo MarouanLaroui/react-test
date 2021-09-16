@@ -17,7 +17,7 @@ function TaskList(props){
             <h2>{props.name}</h2>
             <ul id={props.name}>
                 {
-                tasks.map(t => <Task title={t.title}/> )
+                tasks.map(t => <Task title={t}/> )
                 }
             </ul>
 
