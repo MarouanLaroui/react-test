@@ -9,7 +9,9 @@ function TaskList(props){
     
     /*methods ?*/
     const addTask = (newTask) =>{
-        setTasks(...tasks,newTask)
+
+        setTasks([...tasks,newTask])
+        console.log(tasks)
     }
     /* GUI */
     return (
@@ -17,7 +19,7 @@ function TaskList(props){
             <h2>{props.name}</h2>
             <ul id={props.name}>
                 {
-                tasks.map(t => <Task title={t}/> )
+                tasks.map( (t,index) => <Task title={t} key={index} /> )
                 }
             </ul>
 
